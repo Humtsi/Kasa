@@ -1,0 +1,26 @@
+@import '../themes/colors.scss';
+
+.errorWrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    color: $color-primary;
+
+    &__404 {
+        font-size: 288px;
+        font-weight: 700;
+    }
+    &__span {
+        font-size: 36px;
+        font-weight: 500;
+    }
+    &__link {
+        font-size: 18px;
+        font-weight: 500;
+        color: $black;
+    }
+}

@@ -1,8 +1,9 @@
-import styled from 'styled-components'
 import { ReactComponent as LogoIcon } from '../../assets/Logo.svg';
 
-const Logo = ({ color }) => (
-  <LogoIcon color={color}/>
+
+const Logo = ({ color, height }) => (
+
+  <LogoIcon color={color} style={{ height }}/>
 )
 
 export default Logo

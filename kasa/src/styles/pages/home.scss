@@ -1,0 +1,25 @@
+@import '../themes/colors.scss';
+
+.home {
+  display: flex;
+  flex-direction: column;
+  max-width: 1240px;
+  gap: 40px;
+  justify-content: center;
+  flex-grow: 1;
+  
+  &__gallery {
+    display: grid;
+    background-color : $color-secondary;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 50px;
+    border-radius: 25px;
+
+    &__link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+  }
+}

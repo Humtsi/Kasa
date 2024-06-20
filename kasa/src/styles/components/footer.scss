@@ -1,0 +1,17 @@
+@import '../themes/colors.scss';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    gap: 30px;
+    background-color: $black;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: auto;
+    &__mention {
+        color : $white;
+        font-size: 24px;
+    }
+}

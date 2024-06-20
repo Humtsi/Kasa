@@ -1,31 +1,17 @@
 import { Link } from 'react-router-dom'
-import styled from 'styled-components'
 import Logo from '../Logo'
 import colors from '../../utils/style/colors'
-
-const FooterContainer = styled.nav`
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    align-items: center;
-    gap: 30px;
-    margin-top:auto;
-    background-color: ${colors.black};
-`
-
-const MentionContainer = styled.span`
-    color : ${colors.white};
-`
+import '../../styles/components/footer.scss'
+import '../../styles/themes/global.scss'
 
 function Footer() {
-  console.log('Color passed to Footer:', colors.white);
   return (
-    <FooterContainer>
+    <div className='footer'>
       <Link to="/">
-        <Logo color={colors.white} />
+        <Logo color={colors.white} height="40px"/>
       </Link>
-      <MentionContainer>© 2020 Kasa. All rights reserved</MentionContainer>
-    </FooterContainer>
+      <span className='footer__mention'>© 2020 Kasa. All rights reserved</span>
+    </div>
   )
 }
 

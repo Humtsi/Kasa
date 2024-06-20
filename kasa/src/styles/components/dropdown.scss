@@ -1,0 +1,68 @@
+@import '../themes/colors.scss';
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1023px;
+    border-radius: 10px 10px 5px 5px;
+    margin:0px 0px 20px 0px;
+
+    .title {
+        display: flex;
+        color : $white;
+        background-color: $color-primary;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 10px 20px 10px 15px;
+        z-index: 1;
+
+        &__text {
+            flex-grow: 1;
+            font-size: 24px;
+            font-weight: 700;
+            margin:0;
+        }
+
+        &__arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(90deg);
+            transition: transform ease-out 300ms;
+            height: 32px;
+            width: 32px;
+
+            &--open {
+                transform: rotate(270deg);
+                transition: transform ease-out 300ms;
+            }
+        }
+    }
+
+    &__content {
+        max-height: 0;
+        overflow: hidden;
+        transition: transform 200ms ease-out, max-height 150ms ease-out;
+        transform-origin: top;
+        transform: translateY(-50px);
+
+        &--open {
+            max-height:1000px;
+            transition: transform 100ms ease-out, max-height 100ms ease-out;
+            transform: translateY(0);
+            transform-origin: bottom;
+        }
+
+        &__text {
+            margin:0;
+            font-size: 18px;
+            color: $black;
+            padding: 20px;
+            background-color: $color-secondary;
+            max-width: 1000px;
+            border-radius: 10px 10px 5px 5px;
+        }
+    }
+}

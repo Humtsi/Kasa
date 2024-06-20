@@ -1,0 +1,12 @@
+@import '../themes/colors.scss';
+
+.banner {
+
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        color: $white;
+        line-height: 68.45px;
+        z-index: 2;
+    }
+}

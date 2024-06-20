@@ -1,0 +1,16 @@
+.apropos {
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    gap: 40px;
+    flex-grow: 1;
+
+    &__gallery {
+        width: 1240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        gap:30px;
+    }
+}

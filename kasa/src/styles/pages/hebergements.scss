@@ -1,0 +1,73 @@
+@import '../themes/colors.scss';
+
+.hebergements {
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    gap: 40px;
+    flex-grow: 1;
+
+    &__description {
+        display: flex;
+        justify-content: space-between;
+        &__dropdown {
+            display: flex;
+        }
+    }
+}
+
+.leftcol {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-size: 36px;
+        color: $color-primary;
+        font-weight: 500;
+    }
+    &__location {
+        font-size: 18px;
+        color: $black;
+        font-weight: 500;
+    }
+    &__tags {
+
+
+    }
+}
+
+.rightcol {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 21px;
+
+    &__host{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 167px;
+        height: 64px;
+        gap: 10px;
+
+        &__name {
+            font-size: 18px;
+            color: $color-primary;
+            font-weight: 500;
+            text-align: right;
+            line-height: 25.67px;
+        }
+        &__picture {
+            width: 64px;
+            height: 64px;
+            border-radius: 50px;
+        }
+    }
+}
+
+.hebergements__dropdown {
+    display: flex;
+    gap : 76px;
+    align-items: flex-start;
+}
