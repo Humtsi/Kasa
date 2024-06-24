@@ -1,16 +1,14 @@
-import React from 'react';
 import { Link } from 'react-router-dom'
-import Logo from '../Logo'
-import colors from '../../utils/style/colors'
+import { ReactComponent as Logo } from '../../assets/Logo.svg'
 import '../../styles/components/header.scss'
 import '../../styles/themes/global.scss'
 
 function Header() {
 
   return (
-    <div className="navContainer">
+    <div className='navContainer'>
       <Link to="/">
-        <Logo color = {colors.primary} height={"68px"}/>
+        <Logo className='navContainer__logoIcon'/>
       </Link>
       <nav>
         <Link className='navContainer__link' to="/">

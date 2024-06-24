@@ -4,12 +4,11 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBackIos'
 import '../../styles/components/dropdown.scss'
 import '../../styles/themes/global.scss'
 
-
-function Dropdown({ title ='', content = ''}) {
+function Dropdown({ title ='', content = []}) {
     const [isOpen, setIsOpen] = useState(false)
     const toggleDropdown = () => {
-        setIsOpen(!isOpen);
-    };
+        setIsOpen(!isOpen)
+    }
 
     return (
     <div className='dropdown'>
@@ -21,16 +20,21 @@ function Dropdown({ title ='', content = ''}) {
                 <ArrowBackIcon className={isOpen ? 'title__arrow title__arrow--open' : 'title__arrow'}/>
             </div>
         </div>
-        <div className= {isOpen ? ' dropdown__content dropdown__content--open' : 'dropdown__content'}>
-            <p className='dropdown__content__text' >{content}</p>
+        <div className= {isOpen ? ' content content--open' : 'content'}>
+            <ul className='content__ul'>
+                {content.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
+            </ul>
         </div>
     </div>
     )
-  }
+}
   
-  Dropdown.propTypes = {
+Dropdown.propTypes = {
     title: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired,
-  }
-  export default Dropdown
+    content: PropTypes.array.isRequired,
+}
+  
+export default Dropdown
   

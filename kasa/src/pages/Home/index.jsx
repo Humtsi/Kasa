@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import Banner from '../../components/Banner'
 import Card from '../../components/Card'
 import Data from '../../data/data.json'
@@ -9,6 +11,8 @@ import '../../styles/themes/global.scss';
 function Home() {
 
   return (
+    <div className='homeContainer'>
+    <Header />
     <div className="home">
       <Banner title="Chez vous, partout et ailleurs" backgroundImage={rivageImage} opacity='0.6'/>
       <div className="home__gallery">
@@ -21,6 +25,8 @@ function Home() {
         </Link>
         ))}
       </div>
+    </div>
+    <Footer />
     </div>
   )
 }

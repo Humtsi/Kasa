@@ -3,10 +3,8 @@
 .dropdown {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 1023px;
     border-radius: 10px 10px 5px 5px;
-    margin:0px 0px 20px 0px;
+    width: 100%;
 
     .title {
         display: flex;
@@ -41,7 +39,7 @@
         }
     }
 
-    &__content {
+    .content {
         max-height: 0;
         overflow: hidden;
         transition: transform 200ms ease-out, max-height 150ms ease-out;
@@ -55,14 +53,18 @@
             transform-origin: bottom;
         }
 
-        &__text {
+        ul {
             margin:0;
-            font-size: 18px;
-            color: $black;
             padding: 20px;
             background-color: $color-secondary;
             max-width: 1000px;
             border-radius: 10px 10px 5px 5px;
+            list-style-type: none;
+
+            li {  
+                font-size: 18px;
+                color: $black;
+            }
         }
     }
 }

@@ -31,7 +31,7 @@ function Slideshow ({id}) {
             ) : (
             <div className='slideshow'>
                 <ArrowBackIcon className='slideshow__arrow slideshow__arrow--left' onClick={prev}/>
-                <span className='slideshow__numbers'>{pictureNumber + 1} / {pictures.length + 1}</span>
+                <span className='slideshow__numbers'>{pictureNumber + 1} / {pictures.length}</span>
                 <img className='slideshow__picture' src= {pictures[pictureNumber]} alt='hebergement'/>
                 <ArrowBackIcon className='slideshow__arrow slideshow__arrow--right' onClick={next}/>
             </div>

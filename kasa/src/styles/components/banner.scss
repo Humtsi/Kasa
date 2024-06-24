@@ -1,12 +1,59 @@
 @import '../themes/colors.scss';
 
 .banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    height: 223px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+
+    @media (max-width: 767.98px) {
+        height: 111px;
+    }
 
     &__title {
         font-size: 48px;
         font-weight: 700;
         color: $white;
-        line-height: 68.45px;
         z-index: 2;
+        word-wrap: break-word;
+
+        .break-after::after {
+            content: '';
+        }
+    
+        @media (max-width: 767.98px) {
+            font-size: 24px;
+            width: 225px;
+            text-align: left;
+            white-space: normal;
+
+            .break-after::after {
+                content: "\A";
+                white-space: pre;
+            }
+        }
+
+    }
+
+    &__overlay {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $black;
+        z-index: 1;
     }
 }
+

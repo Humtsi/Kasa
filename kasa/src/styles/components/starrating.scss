@@ -1,16 +1,20 @@
 @import '../themes/colors.scss';
 
-.star-rating {
+.rating {
     display: flex;
     align-items: center;
-    width: 196px;
-    height: 36px;
 
     &__star {
         width: 24px;
         height: 24px;
         margin: 6px;
         color: $color-secondary;
+
+        @media (max-width: 767.98px) {
+            margin: 2px;
+            width: 18px;
+            height: 18px;
+        }
         
         &--active {
             color: $color-primary;
