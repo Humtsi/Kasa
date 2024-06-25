@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom'
-import { ReactComponent as Logo } from '../../assets/Logo.svg'
+import { ReactComponent as Logo } from '../../assets/logo.svg'
 import '../../styles/components/header.scss'
 import '../../styles/themes/global.scss'
 
 function Header() {
-
   return (
     <div className='navContainer'>
       <Link to="/">

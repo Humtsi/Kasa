@@ -1,26 +1,21 @@
 import { useState } from 'react'
 import PropTypes from 'prop-types'
-import Data from '../../data/data.json'
 import ArrowBackIcon from '@material-ui/icons/ArrowBackIos'
 import '../../styles/components/slideshow.scss'
 
-function Slideshow ({id}) {
+function Slideshow ({pictures}) {
 
-    const data = Data.find(item => item.id === id);
-    const pictures = data.pictures;
-    
     const [pictureNumber, setPictureNumber] = useState(0);
     const prevPictureNumber = pictureNumber === 0 ? pictures.length -1 : pictureNumber - 1
     const nextPictureNumber = pictureNumber === pictures.length - 1 ? 0 : pictureNumber + 1
-
    
     const prev = () => {
-        setPictureNumber(prevPictureNumber);
-    };
+        setPictureNumber(prevPictureNumber)
+    }
   
     const next = () => {
-        setPictureNumber(nextPictureNumber);
-    };
+        setPictureNumber(nextPictureNumber)
+    }
 
     return (
         <div>
@@ -43,5 +38,5 @@ function Slideshow ({id}) {
 export default Slideshow
 
 Slideshow.propTypes = {
-    id: PropTypes.string.isRequired,
+    pictures: PropTypes.array.isRequired
 }

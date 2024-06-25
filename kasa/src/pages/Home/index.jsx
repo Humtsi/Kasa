@@ -9,24 +9,23 @@ import '../../styles/pages/home.scss';
 import '../../styles/themes/global.scss';
 
 function Home() {
-
   return (
     <div className='homeContainer'>
-    <Header />
-    <div className="home">
-      <Banner title="Chez vous, partout et ailleurs" backgroundImage={rivageImage} opacity='0.6'/>
-      <div className="home__gallery">
-      {Data?.map((hebergement) => (
-        <Link className='home__gallery__link' key={hebergement.id} to={`/hebergement/${hebergement.id}`}>
-          <Card
-            title={hebergement.title}
-            picture={hebergement.cover}
-          />
-        </Link>
-        ))}
+      <Header />
+      <div className="home">
+        <Banner title="Chez vous, partout et ailleurs" backgroundImage={rivageImage} opacity='0.6'/>
+        <div className="home__gallery">
+        {Data?.map((hebergement) => (
+          <Link className='home__gallery__link' key={hebergement.id} to={`/hebergement/${hebergement.id}`}>
+            <Card
+              title={hebergement.title}
+              picture={hebergement.cover}
+            />
+          </Link>
+          ))}
+        </div>
       </div>
-    </div>
-    <Footer />
+      <Footer />
     </div>
   )
 }

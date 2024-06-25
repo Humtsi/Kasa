@@ -21,9 +21,9 @@ function Hebergements () {
 
   return (
     <div className='hebergementsContainer'>
-      <Header />
+      <Header/>
       <div className="hebergements">
-        <Slideshow id= {id}/>
+        <Slideshow pictures = {data.pictures}/>
         <div className='hebergements__description'>
           <div className='leftCol'>
             <div className='title'>
@@ -31,7 +31,7 @@ function Hebergements () {
               <span className='title__location'>{data.location}</span>
             </div>
             <div className='tags'>
-              <Tags id={id}/>
+              <Tags tags={data.tags}/>
             </div>
           </div>
           <div className='rightCol'>

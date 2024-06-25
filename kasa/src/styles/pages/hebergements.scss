@@ -130,9 +130,22 @@
         &__dropdown {
             display: flex;
             justify-content: center;
-            align-items: center;
             margin-top: 25px;
             gap : 76px;
+
+            .title__text {
+                font-size: 18px;
+
+                @media (max-width: 767.98px) {
+                    font-size: 13px;
+                }
+            }
+
+            .content li {
+                @media (max-width: 767.98px) {
+                    font-size: 12px;
+                }
+            }
         
             @media (max-width: 767.98px) {
                 flex-direction: column;
