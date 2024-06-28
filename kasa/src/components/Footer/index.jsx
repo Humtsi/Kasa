@@ -9,7 +9,7 @@ function Footer() {
       <Link to="/">
         <Logo className='footer__logoIcon'/>
       </Link>
-      <span className='footer__mention'>© 2020 Kasa. All rights reserved</span>
+      <span className='footer__mention'>© 2020 Kasa. All rights&nbsp;reserved</span>
     </div>
   )
 }

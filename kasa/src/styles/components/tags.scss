@@ -2,6 +2,7 @@
 
 .tagsContainer {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 
     &__tag {
@@ -12,7 +13,6 @@
         color: $white;
         font-size: 14px;
         font-weight: 700;
-        line-height: 16.96px;
         background-color: $color-primary;
         align-items: center;
         justify-content: center;

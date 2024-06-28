@@ -9,7 +9,7 @@ function Card({ title ='', picture = DefaultPicture}) {
     <div className='card'>
         <img className="card__img" src={picture} alt="hébergement" /> 
         <div className='card__title'>
-          {title} 
+          {title}
         </div>
     </div>
   )

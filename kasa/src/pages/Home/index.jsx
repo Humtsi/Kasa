@@ -13,7 +13,7 @@ function Home() {
     <div className='homeContainer'>
       <Header />
       <div className="home">
-        <Banner title="Chez vous, partout et ailleurs" backgroundImage={rivageImage} opacity='0.6'/>
+        <Banner title="Chez vous, partout&nbsp;et&nbsp;ailleurs" backgroundImage={rivageImage} opacity='0.6'/>
         <div className="home__gallery">
         {Data?.map((hebergement) => (
           <Link className='home__gallery__link' key={hebergement.id} to={`/hebergement/${hebergement.id}`}>

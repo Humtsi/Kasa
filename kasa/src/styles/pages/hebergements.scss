@@ -3,11 +3,11 @@
 .hebergementsContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 50px;
     padding-top: 45px;
     width: 100%;
+    min-width: 375px;
 
     @media (max-width: 767.98px) {
         padding-top: 20px;
@@ -20,6 +20,8 @@
         flex-direction: column;
         flex-grow: 1;
         width: 100%;
+        padding: 0px 20px;
+        box-sizing: border-box;
     
         &__description {
             display: flex;
@@ -29,7 +31,7 @@
             @media (max-width: 767.98px) {
                 flex-direction: column;
                 margin-top: 15px;
-                padding: 0px 20px;
+                
             }
 
             .leftCol {
@@ -150,7 +152,6 @@
             @media (max-width: 767.98px) {
                 flex-direction: column;
                 gap: 20px;
-                padding: 0px 20px;
                 margin-top: 15px;
             }
         }
