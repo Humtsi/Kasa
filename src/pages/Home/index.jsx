@@ -1,12 +1,12 @@
-import { Link } from 'react-router-dom';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import { Link } from 'react-router-dom'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 import Banner from '../../components/Banner'
 import Card from '../../components/Card'
 import Data from '../../data/data.json'
 import rivageImage from '../../assets/rivage.png'
-import '../../styles/pages/home.scss';
-import '../../styles/themes/global.scss';
+import '../../styles/pages/home.scss'
+import '../../styles/themes/global.scss'
 
 function Home() {
   return (

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 import '../../styles/themes/global.scss'
 import '../../styles/components/error.scss'
 
